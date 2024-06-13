@@ -53,7 +53,7 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-.nan_logo a {
+.nav_logo a {
     text-decoration: none;
     color: var(--extra-light);
     font-size: 1.5rem;
@@ -83,7 +83,7 @@ header{
         rgba(45,92,132,0.5),
         rgba(45,92,132,0.5)
     )
-    url("assets/bg-1.jpg");
+    url("asset Image/photo_1_2024-06-12_16-31-09.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,4 +125,24 @@ header .section_container{
 }
 .header_content button:hover {
     background-color: var(--primary-color-dark);
+}
+
+
+@media (min-width: 640px){
+    .nav_links{
+        display: flex;
+    }    
+
+    header .section_container{
+        justify-content: flex-start;
+    }
+
+    .header_content{
+        max-width: 400px;
+        align-items: flex-start;
+    }
+
+    .header_content p {
+        text-align: left;
+    }
 }
